@@ -1,0 +1,42 @@
+#Made by SplitYoSis
+#Discord: SplitYoSis#4637
+
+settings:
+  enabling-warmup: 15 #seconds
+  radius-horizontal: 100 #blocks
+  use-permission: "roam.use"
+  bypass-warmup-permission: "roam.warmup.bypass"
+  not-allowed-factions-claims: #must all be in lower case
+    - "warzone"
+    - "safezone"
+  whitelisted-commands-in-roam: #must all be in lower case
+    - "msg"
+    - "m"
+    - "reply"
+    - "r"
+
+messages:
+  no-permission:
+    - "&cYou don't have permission to do this!"
+  warmup-started:
+    - "&eEnabling roam in 10 seconds. Don't move!"
+  warmup-cancelled:
+    - "&cYour roam warm up has been cancelled."
+  roam-enabled:
+    - "&aRoam enabled!"
+  roam-disabled:
+    - "&cRoam disabled!"
+  moved-too-far:
+    - "&cYou can't go further than &e100 &cblocks from your original location."
+  cant-do-command-in-warmup:
+    - "&cYou can't use commands while warming up roam! Move around to cancel the warmup."
+  cant-go-there:
+    - "&cYou can't go there in roam."
+  cant-enable-roam-here:
+    - "&cYou can't roam here."
+  cant-tp-to-player:
+    - "&cYou can't teleport a player in roam."
+
+
+player-clone: #The NPC that spawns when a player enters roam
+  display-name: "&c&lIN ROAM &7%player%"

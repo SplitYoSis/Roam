@@ -1,0 +1,14 @@
+name: Roam
+version: '${project.version}'
+main: dev.splityosis.roam.Main
+authors: [ SplitYoSis ]
+description: roam command
+depend:
+  - Citizens
+
+commands:
+  roam:
+    aliases:
+      - freecam
+      - freeroam
+    description: enters/exists roam
