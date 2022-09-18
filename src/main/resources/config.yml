@@ -2,7 +2,7 @@
 #Discord: SplitYoSis#4637
 
 settings:
-  enabling-warmup: 15 #seconds
+  enabling-warmup: 10 #seconds
   radius-horizontal: 100 #blocks
   use-permission: "roam.use"
   bypass-warmup-permission: "roam.warmup.bypass"
