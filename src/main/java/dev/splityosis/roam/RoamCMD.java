@@ -41,7 +41,7 @@ public class RoamCMD implements CommandExecutor {
             RoamManager.disableRoam(player);
         else {
             String facAt = BoardColl.get().getFactionAt(PS.valueOf(player.getLocation())).getName();
-            if (notAllowedAt.contains(facAt)){
+            if (notAllowedAt.contains(facAt.toLowerCase())){
                 Util.sendMessage(player, Main.instance.getConfig().getStringList("messages.cant-enable-roam-here"));
                 return false;
             }

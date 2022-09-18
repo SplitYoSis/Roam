@@ -34,6 +34,7 @@ public class RoamManager {
         new BukkitRunnable(){
             @Override
             public void run() {
+                if (playersInWarmup.get(player) == null) return;
                 if (playersInWarmup.get(player) != pin) return;
                 playersInWarmup.remove(player);
                 enableRoam(player);

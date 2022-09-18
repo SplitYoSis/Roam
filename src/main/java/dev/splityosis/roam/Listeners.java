@@ -70,6 +70,11 @@ public class Listeners implements Listener {
     @EventHandler
     public void move2(PlayerMoveEvent e){
         if (!RoamManager.playersInWarmup.containsKey(e.getPlayer())) return;
+        if (e.getFrom().getBlockX() == e.getTo().getBlockX())
+            if (e.getFrom().getBlockY() == e.getTo().getBlockY())
+                if (e.getFrom().getBlockZ() == e.getTo().getBlockZ())
+                    return;
+
         RoamManager.playersInWarmup.remove(e.getPlayer());
         Util.sendMessage(e.getPlayer(), Main.instance.getConfig().getStringList("messages.warmup-cancelled"));
     }
